@@ -601,15 +601,19 @@ svg {
 }
 
 
+.cart {
+  overflow-y: auto;
+}
+
+.checkout-order {
+  overflow-y: hidden;
+  min-height: 430px !important;
+}
 
 @media (max-width: 1150px) {
   * {
     overflow-x: hidden;
   }
-
-  // .cart {
-  //   display: block !important;
-  // }
 
   .wrapper {
     max-width: 750px;
