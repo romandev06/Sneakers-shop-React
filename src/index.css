@@ -1,0 +1,727 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+input {
+  background-color: transparent;
+  color: var(--input-color);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+@font-face {
+  font-family: "Inter-regular";
+  src: url(/public/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-medium";
+  src: url(/public/fonts/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url(/public/fonts/Inter-Bold.ttf);
+}
+* {
+  font-family: "Inter-regular";
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  display: inline-block;
+  display: block;
+  overflow-x: 9px;
+  margin: 0;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1080px;
+  margin-inline: auto;
+  margin-block: 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+  background-color: var(--wrapper-bg-color);
+}
+
+.header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: var(--header-text-title-color);
+}
+.header-title h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.header-title p {
+  color: var(--header-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+
+.header-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+.header-list li span {
+  color: var(--header-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.header-line {
+  width: 1080px;
+  border: 1px solid rgb(234, 234, 234);
+}
+
+.main {
+  padding: 60px;
+}
+
+.sneakers-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 40px;
+  color: var(--sneakers-title);
+}
+
+.sneakers-section {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  place-content: center;
+  gap: 40px;
+}
+
+.sneakers-article {
+  width: 210px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 40px;
+  background-color: var(--sneakers-item);
+  padding: 20px 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .sneakers-article:hover {
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+    -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+.sneakers-article h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-block: 14px;
+  color: var(--sneakers-description-text);
+}
+
+.add-sneaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.add-sneaker button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.price-container h4 {
+  font-family: "Inter-bold";
+  color: var(--sneakers-price);
+}
+
+.search-sneakers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 200px;
+  margin-top: 50px;
+}
+.search-sneakers__container .search-input {
+  width: 250px;
+  padding: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 10px;
+}
+.search-sneakers__container .search-input input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search-sneakers__container .search-input input::-webkit-input-placeholder {
+  color: var(--placeholder-color);
+}
+.search-sneakers__container .search-input input::-moz-placeholder {
+  color: var(--placeholder-color);
+}
+.search-sneakers__container .search-input input:-ms-input-placeholder {
+  color: var(--placeholder-color);
+}
+.search-sneakers__container .search-input input::-ms-input-placeholder {
+  color: var(--placeholder-color);
+}
+.search-sneakers__container .search-input input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.my-bookmarks__text {
+  margin: 35px;
+  color: var(--bookmarks-text);
+}
+
+.heart-unliked {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  position: absolute;
+  top: 20px;
+}
+@media (hover: hover) {
+  .heart-unliked:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.overlay-aside {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.cart {
+  position: absolute;
+  right: 0;
+  width: 385px;
+  height: 100%;
+  -webkit-box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--cart-bg-color);
+  color: var(--cart-color);
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cart h2 {
+  margin-bottom: 60px;
+}
+.cart-item {
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.remove-item-btn {
+  cursor: pointer;
+}
+.remove-item-btn img {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .remove-item-btn img:hover {
+    opacity: 1;
+  }
+}
+
+.cart-item__info p {
+  font-size: 14px;
+}
+.cart-item__info h3 {
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: "Inter-bold";
+}
+
+.get-order {
+  width: 325px;
+  border-radius: 18px;
+  background-color: rgb(157, 213, 88);
+  padding: 18px 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.get-order img {
+  -webkit-transition: -webkit-transform 0.16s ease-in-out;
+  transition: -webkit-transform 0.16s ease-in-out;
+  transition: transform 0.16s ease-in-out;
+  transition: transform 0.16s ease-in-out, -webkit-transform 0.16s ease-in-out;
+  position: relative;
+  left: 20px;
+}
+@media (hover: hover) {
+  .get-order:hover img {
+    -webkit-transform: translateX(8px) rotate(90deg);
+        -ms-transform: translateX(8px) rotate(90deg);
+            transform: translateX(8px) rotate(90deg);
+  }
+}
+.get-order p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter-bold";
+}
+
+.cart-result1,
+.cart-result2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-block: 19px;
+}
+.cart-result1 strong,
+.cart-result2 strong {
+  font-family: "Inter-bold";
+  font-weight: 600;
+}
+
+.cart-result2 {
+  margin-bottom: 24px;
+}
+
+.cart-result__line {
+  width: 155px;
+  border: 1px dashed rgb(223, 223, 223);
+}
+
+.close-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cart-item__section {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.cart-item__section::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(243, 247, 255);
+}
+.cart-item__section::-webkit-scrollbar-thumb {
+  background-color: rgb(157, 213, 88);
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 250px;
+}
+.empty-cart h1 {
+  margin-block: 10px;
+}
+.empty-cart p {
+  color: var(--cart-color);
+}
+.empty-cart button {
+  width: 245px;
+  margin-top: 25px;
+  border-radius: 18px;
+  background-color: rgb(157, 212, 88);
+  padding-block: 17px;
+  cursor: pointer;
+  gap: 15px;
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.empty-cart button p {
+  color: white;
+  font-weight: 500;
+}
+@media (hover: hover) {
+  .empty-cart button:hover img {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.empty-cart .empty-cart__arrow-btn {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.16s ease-in-out;
+  transition: -webkit-transform 0.16s ease-in-out;
+  transition: transform 0.16s ease-in-out;
+  transition: transform 0.16s ease-in-out, -webkit-transform 0.16s ease-in-out;
+}
+
+.order-section h1 {
+  margin: 45px;
+  color: var(--my-purchases);
+}
+
+.checkout-order {
+  margin-bottom: 400px;
+}
+
+.order-sneakers {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  place-content: center;
+  place-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+body {
+  --bg-color: rgb(213, 232, 251);
+  --wrapper-bg-color: white;
+  --header-text-color: rgb(157, 157, 157);
+  --header-text-title-color: black;
+  --placeholder-color: silver;
+  --sneakers-description-text: black;
+  --sneakers-title: black;
+  --sneakers-price: black;
+  --input-color: black;
+  --bookmarks-text: black;
+  --my-purchases: black;
+  --cart-bg-color: rgb(255, 255, 255);
+  --cart-color: black;
+}
+
+body.dark {
+  --bg-color: rgb(98, 115, 132);
+  --wrapper-bg-color: rgba(0, 0, 0, 0.3);
+  --header-text-color: white;
+  --header-text-title-color: white;
+  --placeholder-color: white;
+  --sneakers-item: white;
+  --sneakers-title: white;
+  --sneakers-description-text: black;
+  --sneakers-price: black;
+  --input-color: white;
+  --bookmarks-text: white;
+  --my-purchases: white;
+  --cart-bg-color: rgb(88, 102, 105);
+  --cart-color: white;
+}
+
+svg {
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.change-theme__btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.add-sneaker button,
+.remove-item-btn img {
+  width: 37px;
+  height: 37px;
+}
+
+.sneakers-section,
+.order-section {
+  padding-bottom: 30px;
+}
+
+.cart-item {
+  margin: 20px 0;
+}
+
+@media (max-width: 1150px) {
+  * {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    max-width: 750px;
+  }
+  .sneakers-section,
+  .order-sneakers {
+    grid-template-columns: repeat(3, 210px) !important;
+  }
+  .cart-item {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .remove-item-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .remove-item-btn__main {
+    position: initial;
+  }
+}
+@media (max-width: 780px) {
+  .wrapper {
+    max-width: 530px;
+  }
+  .sneakers-section,
+  .order-sneakers {
+    grid-template-columns: repeat(2, 210px) !important;
+  }
+  .search-sneakers__container {
+    gap: 48px !important;
+  }
+  .sneakers-title {
+    position: relative;
+    left: 15px;
+  }
+  .search-input {
+    position: relative;
+    right: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .header-list {
+    margin-top: 20px;
+    gap: 15px;
+  }
+  .header-list li span {
+    font-size: 12px;
+  }
+  .cart {
+    width: 280px;
+  }
+  .empty-cart button,
+  .get-order {
+    width: 150px !important;
+  }
+  .get-order {
+    padding: 14px 0;
+  }
+  .get-order p {
+    font-size: 14px;
+  }
+  .empty-cart__box-img {
+    width: 90px;
+    height: 90px;
+  }
+  .empty-cart__arrow-btn,
+  .get-order img {
+    display: none;
+  }
+  .empty-cart__description-text {
+    font-size: 13px;
+  }
+  .wrapper {
+    max-width: 330px;
+  }
+  .sneakers-section,
+  .order-sneakers {
+    grid-template-columns: repeat(1, 250px) !important;
+  }
+  .header-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search-sneakers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0 !important;
+  }
+  .sneakers-title {
+    text-wrap: wrap;
+    font-size: 28px;
+  }
+  .search-input {
+    position: relative;
+    left: 20px;
+    margin-bottom: 30px;
+  }
+}
