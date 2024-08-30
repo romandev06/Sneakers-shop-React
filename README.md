@@ -1,1 +1,1 @@
-[Sneakers Shop React](https://sneakers-shop-react-woad.vercel.app/)
+[Sneakers Shop React](https://sneakers-shop-mocha.vercel.app/)
