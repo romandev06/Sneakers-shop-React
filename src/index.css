@@ -611,11 +611,11 @@ svg {
 }
 
 .cart {
-  overflow-y: auto;
+  overflow-y: hidden !important;
 }
 
 .checkout-order {
-  overflow-y: hidden;
+  overflow-y: hidden !important;
   min-height: 430px !important;
 }
 
