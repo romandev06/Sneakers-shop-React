@@ -541,6 +541,13 @@ code {
 .checkout-order {
   margin-bottom: 400px;
 }
+.checkout-order::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(243, 247, 255) !important;
+}
+.checkout-order::-webkit-scrollbar-thumb {
+  background-color: rgb(157, 213, 88) !important;
+}
 
 .order-sneakers {
   display: grid;
@@ -611,7 +618,14 @@ svg {
 }
 
 .cart {
-  overflow-y: hidden !important;
+  overflow-y: scroll !important;
+}
+.cart::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(243, 247, 255) !important;
+}
+.cart::-webkit-scrollbar-thumb {
+  background-color: rgb(157, 213, 88) !important;
 }
 
 .checkout-order {

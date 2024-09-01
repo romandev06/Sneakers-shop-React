@@ -518,6 +518,15 @@ code {
 
 .checkout-order {
   margin-bottom: 400px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(243, 247, 255) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(157, 213, 88) !important;
+  }
 }
 
 .order-sneakers {
@@ -602,7 +611,16 @@ svg {
 
 
 .cart {
-  overflow-y: hidden !important;
+  overflow-y: scroll !important;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(243, 247, 255) !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(157, 213, 88) !important;
+  }
 }
 
 .checkout-order {
