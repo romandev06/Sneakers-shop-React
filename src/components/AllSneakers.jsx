@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Sneakers from './Sneakers'
-import SneakersSkeletons from '../SneakersSkeletons'
+import SneakersSkeletons from './SneakersSkeletons'
 import { AppContext } from '../hooks/useContextCode'
 
 
